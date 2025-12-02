@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+      background-image: url(/Imagenes/castillo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+header{
+    padding: 20px 0;
+}
+header, footer{
+    background-color: rgb(10, 10, 10);
+    color: blanchedalmond;
+    width: 100%;
+}
+#main-footer{
+    position: absolute;
+    bottom: 0;
+text-align:center;
+font-size: 22px;
+padding: 60px 0;
+}
+header h2{
+    font-size: 20px;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+a:hover{
+    background: red;
+}
+.principal{
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.info-empresa{
+    
+     position: relative;
+     width: 800px;
+    height: 650px;
+    margin: 10px;
+     background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card{
+    
+
+  position: relative;
+     width: 350px;
+    height: 650px;
+    margin: 10px;
+  
+    
+    
+}
+.face-empresa{
+    position:absolute;
+    width: 200%;
+    height: 200%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.imagen img{
+    width: 300px;
+    margin: 10px;
+}
+
+.card .face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+  
+}
+
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(0, 0, 0,.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px)rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px)rotateY(360deg);
+}
+/*Form contacto*/
+.container-form{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 98px;
+
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.container-form p{
+    font-size: 27px;
+    line-height: 1.20;
+    margin-bottom: 36px;
+}
+.container-form a{
+    font-size: 35px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #f3f3f3;
+    font-weight: 700;
+}
+.container-form a i{
+    color: #f3f3f3;
+   
+}
