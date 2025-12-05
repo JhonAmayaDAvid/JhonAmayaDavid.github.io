@@ -5,13 +5,13 @@
 
 }
 body{
-      background-image: url(/Imagenes/castillo.png);
+      background-image: url(Imagenes/castillo.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
-    
+   position: relative;
     
 }
 header{
@@ -23,11 +23,12 @@ header, footer{
     width: 100%;
 }
 #main-footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
 text-align:center;
 font-size: 22px;
 padding: 60px 0;
+margin-top: auto;
 }
 header h2{
     font-size: 20px;
@@ -64,7 +65,7 @@ a:hover{
      position: relative;
      width: 800px;
     height: 650px;
-    margin: 10px;
+    margin: 50px;
      background: rgb(3, 35, 54);
     padding: 15px;
     color: #f3f3f3;
@@ -78,16 +79,17 @@ a:hover{
     
 
   position: relative;
-     width: 350px;
-    height: 650px;
-    margin: 10px;
+     width: 500px;
+    height:1000px;
+    margin: 5px;
   
     
     
 }
 .face-empresa{
-    position:absolute;
-    width: 200%;
+    position:relative;
+    width:200%;
+
     height: 200%;
     backface-visibility: hidden;
     border-radius: 10px;
@@ -101,8 +103,8 @@ a:hover{
 
 .card .face{
     position:absolute;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
